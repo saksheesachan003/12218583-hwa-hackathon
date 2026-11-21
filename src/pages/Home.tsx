@@ -5,6 +5,9 @@ import { SolutionSection } from '@/components/sections/SolutionSection'
 import { HowItWorksSection } from '@/components/sections/HowItWorksSection'
 import { ProductShowcaseSection } from '@/components/sections/ProductShowcaseSection'
 import { BenefitsSection } from '@/components/sections/BenefitsSection'
+import { SubscriptionSection } from '@/components/sections/SubscriptionSection'
+import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
+import { FAQSection } from '@/components/sections/FAQSection'
 import { CTASection } from '@/components/sections/CTASection'
 
 export function Home() {
@@ -17,6 +20,9 @@ export function Home() {
       <HowItWorksSection />
       <ProductShowcaseSection />
       <BenefitsSection />
+      <SubscriptionSection />
+      <TestimonialsSection />
+      <FAQSection />
       <CTASection />
     </div>
   )

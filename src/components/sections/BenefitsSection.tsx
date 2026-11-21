@@ -1,26 +1,36 @@
 import { motion } from 'framer-motion'
-import { Brain, PawPrint, ShieldCheck, Clock } from 'lucide-react'
+import { Brain, PawPrint, RefreshCw, Puzzle, Zap, Leaf } from 'lucide-react'
 
 const BENEFITS = [
   {
     icon: <Brain className="w-5 h-5" />,
     title: 'Mental enrichment',
-    body: 'Scent-driven problem solving keeps your dog\u2019s mind active and sharp throughout the day.',
+    body: 'Scent-driven play keeps your dog\u2019s mind active and curious.',
   },
   {
     icon: <PawPrint className="w-5 h-5" />,
-    title: 'Reduces anxiety',
-    body: 'Engaging play eases separation stress and prevents boredom-driven destructive behavior.',
+    title: 'Encourages natural sniffing instincts',
+    body: 'Lets dogs use their strongest sense in a rewarding, instinct-led activity.',
   },
   {
-    icon: <ShieldCheck className="w-5 h-5" />,
-    title: 'Lasting engagement',
-    body: 'Changing scent locations prevent memorization — the puzzle stays interesting for weeks.',
+    icon: <RefreshCw className="w-5 h-5" />,
+    title: 'Reusable puzzle experience',
+    body: 'One board, used again and again with new scent pouches every session.',
   },
   {
-    icon: <Clock className="w-5 h-5" />,
-    title: 'Hours of independent play',
-    body: 'Keeps dogs happily occupied while you\u2019re away or busy, no screens or treats required.',
+    icon: <Puzzle className="w-5 h-5" />,
+    title: 'Changing challenges',
+    body: 'Scent locations shift between sessions so dogs can\u2019t memorize one solution.',
+  },
+  {
+    icon: <Zap className="w-5 h-5" />,
+    title: 'Interactive problem-solving',
+    body: 'Sliders, flip lids, and latches turn sniffing into an active challenge.',
+  },
+  {
+    icon: <Leaf className="w-5 h-5" />,
+    title: 'Multiple scent collections',
+    body: 'Forest Trail, Herb Trail, and Other-Animal Trail keep things fresh.',
   },
 ]
 
@@ -36,20 +46,22 @@ export function BenefitsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
           {BENEFITS.map((benefit, i) => (
             <motion.div
               key={benefit.title}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="rounded-3xl border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-white/20 transition-all"
+              transition={{ delay: i * 0.08 }}
+              className="rounded-3xl border border-white/10 bg-white/5 p-8 hover:bg-white/10 hover:border-white/20 transition-all text-center"
             >
-              <div className="w-12 h-12 rounded-2xl bg-brand-500/20 flex items-center justify-center mb-6 backdrop-blur-sm border border-brand-500/30">
+              <div className="w-12 h-12 rounded-2xl bg-brand-500/20 flex items-center justify-center mx-auto mb-4 backdrop-blur-sm border border-brand-500/30">
                 {benefit.icon}
               </div>
-              <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-              <p className="text-earth-300 text-sm leading-relaxed">{benefit.body}</p>
+              <h3 className="text-sm font-bold mb-2 uppercase tracking-wider text-brand-100">
+                {benefit.title}
+              </h3>
+              <p className="text-xs text-earth-300 leading-relaxed">{benefit.body}</p>
             </motion.div>
           ))}
         </div>
