@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Hackathon setup files (never commit or deploy)
+.hwa/
+.vercel/
+.env*
+init.py
+init (*).py
+submit.py
+hwa-start.*
