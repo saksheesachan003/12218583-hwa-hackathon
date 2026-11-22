@@ -8,7 +8,7 @@ import { BenefitsSection } from '@/components/sections/BenefitsSection'
 import { SubscriptionSection } from '@/components/sections/SubscriptionSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { FAQSection } from '@/components/sections/FAQSection'
-import { CTASection } from '@/components/sections/CTASection'
+import { FinalCTASection } from '@/components/sections/FinalCTASection'
 
 export function Home() {
   return (
@@ -23,7 +23,7 @@ export function Home() {
       <SubscriptionSection />
       <TestimonialsSection />
       <FAQSection />
-      <CTASection />
+      <FinalCTASection />
     </div>
   )
 }
