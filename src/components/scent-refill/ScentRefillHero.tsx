@@ -242,37 +242,84 @@ export function ScentProductInfo() {
           <div className="space-y-6">
             <h3 className="text-2xl font-bold mb-4">Scent-based, not food</h3>
             <p className="text-earth-600 leading-relaxed">
-              SniffTrail scent pouches are enrichment accessories, not edible treats. They are designed to be found and sniffed
-              — never eaten by your dog. Each pouch holds a long-lasting scent that invites your dog to track, investigate, and solve.
+              SniffTrail scent pouches are scent-based enrichment accessories, not edible treats. They are designed to be found
+              and sniffed — never eaten by your dog. Each pouch holds a long-lasting scent that invites your dog to track,
+              investigate, and solve.
             </p>
-            <h3 className="text-2xl font-bold mb-4 mt-8">Fresh trails, every session</h3>
+            <h3 className="text-2xl font-bold mb-4 mt-8">How they are used</h3>
             <p className="text-earth-600 leading-relaxed">
-              Because dogs learn and memorize puzzle solutions quickly, changing the scent pouch and its location between sessions
-              keeps the challenge alive. Rotate collections to keep your dog curious for weeks, not days.
+              Place a scented pouch inside one or more compartments of the SniffTrail puzzle board before you head out. Your dog
+              uses its nose to sniff out which compartment holds the scent, then slides, lifts, or unlatches the movable
+              mechanisms to discover the pouch.
+            </p>
+            <h3 className="text-2xl font-bold mb-4 mt-8">How they fit the puzzle board</h3>
+            <p className="text-earth-600 leading-relaxed">
+              Each pouch is sized to sit securely inside the board\u2019s movable compartments. Pouches slide into dedicated scent
+              slots and stay in place while your dog investigates the board.
+            </p>
+            <h3 className="text-2xl font-bold mb-4 mt-8">How to replace them</h3>
+            <p className="text-earth-600 leading-relaxed">
+              Remove the used pouch from its compartment and insert a fresh one. Change the pouch location between sessions so
+              your dog can\u2019t memorize one fixed solution. Dispose of used pouches responsibly — do not let your dog chew or
+              swallow them.
+            </p>
+            <h3 className="text-2xl font-bold mb-4 mt-8">Storage and care</h3>
+            <p className="text-earth-600 leading-relaxed">
+              Store scent pouches in a cool, dry place away from direct sunlight and strong odors. Keep the pouch pouch sealed
+              until ready to use. Replace pouches when the scent fades. Keep out of reach of children and other pets when not in
+              use.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="rounded-2xl border border-bark-100 bg-white p-6">
-              <Clock className="w-5 h-5 text-earth-600 mb-3" />
-              <h4 className="font-bold text-earth-900">Monthly delivery</h4>
-              <p className="text-sm text-earth-600">New scent collection arrives on schedule.</p>
+          <div className="rounded-3xl border border-bark-100 bg-white p-8 shadow-sm">
+            <div className="flex items-start gap-3 mb-6">
+              <div className="w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center shrink-0">
+                <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <div>
+                <h4 className="font-bold text-earth-900">Product safety</h4>
+                <p className="text-sm text-earth-600 mt-1">
+                  Scent pouches are not food and are not intended for consumption. Supervise your dog during play. If a pouch is
+                  damaged or swallowed, discontinue use and contact your veterinarian. Scent exposure is not guaranteed to be
+                  risk-free for every dog — discontinue use if your dog shows signs of irritation or distress.
+                </p>
+              </div>
             </div>
-            <div className="rounded-2xl border border-bark-100 bg-white p-6">
-              <PawPrint className="w-5 h-5 text-earth-600 mb-3" />
-              <h4 className="font-bold text-earth-900">Pause anytime</h4>
-              <p className="text-sm text-earth-600">Skip or cancel your subscription whenever you like.</p>
+
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <Check className="w-4 h-4 mt-0.5 shrink-0 text-brand-500" />
+                <span className="text-sm text-earth-600">Enrichment accessory — not edible</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <Check className="w-4 h-4 mt-0.5 shrink-0 text-brand-500" />
+                <span className="text-sm text-earth-600">Supervise play at all times</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <Check className="w-4 h-4 mt-0.5 shrink-0 text-brand-500" />
+                <span className="text-sm text-earth-600">Store in a cool, dry place</span>
+              </div>
             </div>
-            <div className="rounded-2xl border border-bark-100 bg-white p-6 mt-4">
-              <TreePine className="w-5 h-5 text-earth-600 mb-3" />
-              <h4 className="font-bold text-earth-900">Three collections</h4>
-              <p className="text-sm text-earth-600">Forest, Herb, and Other-Animal Trails.</p>
-            </div>
-            <div className="rounded-2xl border border-bark-100 bg-white p-6 mt-4">
-              <Leaf className="w-5 h-5 text-earth-600 mb-3" />
-              <h4 className="font-bold text-earth-900">Scent-only</h4>
-              <p className="text-sm text-earth-600">Enrichment accessories — never food.</p>
-            </div>
+          </div>
+        </div>
+
+        <div className="mt-16 rounded-3xl bg-gradient-to-b from-earth-600 to-earth-800 p-10 md:p-16 text-center shadow-2xl shadow-earth-600/40 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-400/20 to-transparent" />
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight relative z-10">
+            Choose Their Next Scent Adventure
+          </h2>
+          <p className="text-earth-100/90 text-lg mb-8 max-w-xl mx-auto relative z-10">
+            Rotate collections to keep every sniff fresh and every trail exciting.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+            <Button variant="ghost" className="w-full sm:w-auto text-white border-white/20 hover:bg-white/20 px-10 py-4 text-lg">
+              Shop Refill Packs
+            </Button>
+            <Button variant="outline" className="w-full sm:w-auto text-white border-white/20 hover:bg-white/20 px-10 py-4 text-lg">
+              Subscribe to Refills
+            </Button>
           </div>
         </div>
       </div>

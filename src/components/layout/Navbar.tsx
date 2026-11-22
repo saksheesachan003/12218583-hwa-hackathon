@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, ShoppingCart } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useCart } from '@/context/CartContext'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/Button'
+import { CartIconButton } from '@/components/cart/CartDrawer'
 
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
@@ -17,7 +18,6 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const location = useLocation()
-  const { itemCount, toggleCart } = useCart()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
@@ -71,18 +71,7 @@ export function Navbar() {
                   Shop Now
                 </Button>
               </Link>
-              <button
-                onClick={toggleCart}
-                className="relative p-2 text-earth-500 hover:text-earth-600 transition-colors"
-                aria-label="Shopping cart"
-              >
-                <ShoppingCart className="w-5 h-5" />
-                {itemCount > 0 && (
-                  <span className="absolute top-0 right-0 w-5 h-5 rounded-full bg-brand-500 text-white text-[10px] font-bold flex items-center justify-center">
-                    {itemCount}
-                  </span>
-                )}
-              </button>
+              <CartIconButton />
             </div>
 
             <button

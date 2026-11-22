@@ -12,6 +12,8 @@ import { ScentRefillPage } from '@/pages/ScentRefill'
 import { PrivacyPolicy } from '@/pages/Privacy'
 import { Terms } from '@/pages/Terms'
 import { Shipping } from '@/pages/Shipping'
+import { Cart } from '@/pages/Cart'
+import { CartDrawer } from '@/components/cart/CartDrawer'
 
 export default function App() {
   return (
@@ -19,10 +21,12 @@ export default function App() {
       <BrowserRouter>
         <div className="min-h-screen bg-earth-50 text-earth-900">
           <Navbar />
+          <CartDrawer />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/product" element={<ProductPage />} />
             <Route path="/scent-refill" element={<ScentRefillPage />} />
             <Route path="/our-story" element={<OurStory />} />
