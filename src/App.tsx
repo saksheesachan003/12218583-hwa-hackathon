@@ -8,6 +8,7 @@ import { Shop } from '@/pages/Shop'
 import { OurStory } from '@/pages/OurStory'
 import { Contact } from '@/pages/Contact'
 import { ProductPage } from '@/pages/Product'
+import { ScentRefillPage } from '@/pages/ScentRefill'
 import { PrivacyPolicy } from '@/pages/Privacy'
 import { Terms } from '@/pages/Terms'
 import { Shipping } from '@/pages/Shipping'
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/product" element={<ProductPage />} />
+            <Route path="/scent-refill" element={<ScentRefillPage />} />
             <Route path="/our-story" element={<OurStory />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
